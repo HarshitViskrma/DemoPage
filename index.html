@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta lang="en-US">
+		<meta name="keyword" content="information technology, IT industry">
+		<meta name="author" content="information_technology.com">
+		<meta name="description" content="This is the best information technology website.">
+		<title>Information_Technology.com</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			#box{
+				width: 75%;
+				height: 580px;
+				background: #f9f9f9;
+				border-color: grey;
+				border-style: groove;
+				border-width: 10px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				padding-top: 20px;
+				box-sizing: border-box;
+			}
+			body{
+				margin: 0px;
+			}
+			#row{
+				width: 100%;
+				height: 30px;
+				border-width: 0px;
+				border-color: #f0f0f0;
+				border-style: solid;
+				text-align: center;
+				margin: 0px;
+			}
+			#col{
+				width: 20%;
+				height: 30px;
+				border-width: 2px;
+				border-style: solid;
+				border-color: #f0f0f0;
+				text-align: center;
+				background-color: #b4b4b4;
+				box-sizing: border-box;
+			    float: left;
+				padding: 2px 2px;
+			}
+
+			.dropdown{
+				display: inline-block;
+			}
+			.dropdown a{
+				background-color: #b4b4b4;
+				color: black;
+			    display: block;
+			    height: 10 px;
+			    text-decoration: none;
+			    padding: 0px 70px;
+			}
+			.dropdown .content{
+				display: none;
+				position: absolute;
+				background-color: #b4b4b4;
+				text-align: center;
+				box-shadow: 2px 2px 5px black;	
+			}
+			.dropdown:hover .content{
+				display: block;
+			}
+			.dropdown:hover #col{
+				background-color: #b4b4b4;
+			}
+			.dropdown a:hover{
+				background-color: #787878;
+			}
+			marquee{
+				padding: 5px 5px;
+			}
+			.navbar{
+				width: 100%;
+				height: 50px;
+				background-color: slategray;
+				border-radius: 10px;
+				color: black;
+				font-size: 30px;
+			 	font-family: sans-serif;
+			 	padding: 10px;
+			 	font-weight: bold;
+			 	margin-bottom:5px;
+			 	box-sizing: border-box;
+			 	
+			}
+			#enquiry_form{
+				width: 1200px;
+				height: 530px;
+				border:3px solid black ;
+				margin-top: 35px;
+				margin-bottom: 25px;
+				padding: 20px;
+				border-radius: 10px;
+			}
+			#submit{
+				border:2px solid #ccc;
+				font-size: 20px;
+				padding: 5px 20px 5px 20px;
+				background-color: white;
+			}
+			footer{
+				width: 100%;
+				height: 220px;
+				background-color: rgb(0, 0, 0);
+				color: white;
+				box-sizing: border-box;
+			}
+			#contact_us{
+				float: left;
+				font-size: 20px;
+				margin-left: 30px;
+				margin-top: 15px;
+				width: 300px;
+				text-align: left;
+			}
+			#follow_on{
+				float: right;
+				font-size: 30px;
+				margin-right: 30px;
+				margin-top:15px;
+			}
+			#foot{
+				font-size: 30px;
+				margin-right: 30px;
+				margin-top:20px;
+			}
+			#logo{
+				width:40px;
+				margin-right: 10px;
+			}
+			ul{
+				padding: 0;
+				margin:0;
+				list-style: none;
+				float:left;
+			}
+			a{
+				text-decoration: none;
+				color:white;
+			}
+			li{ 
+				width:150px;
+				height: 40px;
+				background-color: black;
+				display: inline-block;
+				text-align: center;
+				padding-top: 10px;
+				box-sizing: border-box;
+				font-family: sans-serif;
+				font-size: 15px;
+			}
+			nav{
+				width:100%;
+				height: 40px;
+				box-sizing: border-box;
+				background-color: black;
+			}
+			li:hover{
+				background-color: grey;
+				border-radius: 10px;
+				transition: 1s;
+			}
+			li:hover a{
+				color:antiquewhite;
+				font-weight: bold;
+				font-size: 16px;
+				transition: 1s;
+
+			}
+
+			#search_box{
+				width: 350px;
+				height: 24px;
+				box-sizing: border-box;
+				margin-top: 8px;
+				margin-left: 80px;
+				border-radius: 3px;
+				border: none;
+			}
+			#search_box:focus{
+				background-color: black;
+				color: white;
+				outline:none;
+			}
+			#search_btn{
+				width:130px;
+				height: 24px;
+				margin-bottom: 2px;
+				font-weight: bold;
+				font-family: sans-serif;
+				cursor:pointer;
+				border-radius: 3px;
+				border: none;
+			}
+			#search_btn:hover{
+				background-color: grey;
+				color:white;
+				transition: 0.5s;
+				border-radius: 3px;
+				border: none;
+			}
+			fieldset{
+				width: 98%;
+				height: 300px;
+				padding: 20px;
+				margin: 10px auto;
+				border:3px solid black;
+				border-radius: 10px;
+				background-color: whitesmoke;
+				box-sizing: border-box;
+			}
+			#fee{
+				font-size: 30px;
+				font-family: britannic;
+				font-weight: bold;
+			}
+			#lorem{
+				color: slategrey;
+				text-align: justify;
+				word-spacing: 10px;
+				line-height: 15px;
+			}
+			*::selection{
+				background-color: black;
+				color: lightgreen;
+			}
+			#drop{
+				position:relative;
+			}
+
+			#content{
+				position: absolute;
+				left:0px;
+				margin-top:13px;
+				display: none;
+			}
+			#drop:hover #content{
+				display: block;
+			}
+			#drop-btn{
+				font-weight: normal;
+				font-family: sans-serif;
+			}
+			#drop-btns{
+				font-weight: normal;
+				font-family: sans-serif;
+			}
+		    #content #drop-btn:hover{
+				font-weight: bold;
+				transition: 0.5s;
+				font-size: 17px;
+			}
+			#content #drop-btns:hover{
+				font-weight: bold;
+				transition: 0.5s;
+				font-size: 17px;
+			}
+			#drop-btns{
+				position: relative;
+			}
+			#contents{
+				position: absolute;
+				margin-top: 10px;
+				left:150px;
+				top:110px;
+				display: none;
+			}
+			#drop-btnj{
+				font-weight: normal;
+				font-family: sans-serif;
+			}
+
+			#drop-btns:hover #contents{
+				display:block;
+				position: absolute;
+			}
+			#contents #drop-btns{
+				color: whitesmoke;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body style="background: #f0f0f0; text-align: center;">
+		<header><table width="100%" bgcolor="#f9f9f9">
+			<tr>
+			<td width="100"></td>
+			<td align="right" width="450"><img src="logo.png" alt="Logo" width="200px" height="150px"></td>
+		    <td align="center" width="414"><font style="font-size: 70px;" color="solid cyan" face="Britannic">INFORMATION</font><br>
+		    <font style="font-size: 27px;" face="MS Reference Sans Serif">T E C H N O L O G Y  .  C O M</font></td>
+		    <td width="400"></td></tr>
+	    </table>
+	    <nav>
+	    	<ul>
+	    		<li><a href="#index.html">Home</a></li>
+	    		<li id="drop"><a href="#">Course</a>
+	    			<ul id="content">
+	    				<li><a href="#" id="drop-btn">HTML</a></li>
+	    				<li><a href="#" id="drop-btn">CSS2</a></li>
+	    				<li><a href="#" id="drop-btn">CSS3</a></li>
+	    				<li><a href="#" id="drop-btns">JAVA-SCRIPT</a>
+	    					<ul id="contents">
+	    						<li><a href="#" id="drop-btnj">Task-1</a></li>
+	    						<li><a href="#" id="drop-btnj">Task-2</a></li>
+	    						<li><a href="#" id="drop-btnj">Task-3</a></li>
+	    						<li><a href="#" id="drop-btnj">Task-4</a></li>
+	    					</ul>
+	    				</li>
+	    			</ul>
+	    		</li>
+	    		<li><a href="#contact_us">Contact Us</a></li>
+	    		<li><a href="#about">About</a></li>
+	    	</ul> 
+	    	<form>
+	    		<input type="search" name="search" placeholder="Search here" id="search_box">
+	    		<button id="search_btn">Search</button>
+	    	</form>
+	    </nav>
+		</header>
+
+		
+        <center><div id="box">
+        	<font style="font-family: Algerian; font-size: 50px; line-height: 80px;">NOTICE</font>
+
+        	<hr width="80%" size="3" color="black">
+
+        	<font size="5" face="system" align="left"><pre>
+
+	March 01, 202X
+				<center><u>ATTENTION!</u></center>
+	This notice is to inform all the residents regarding the suspension of water
+	supply for 8 hours. It is being done to clean the water tank. The details 
+	are as follows:
+	DATE- March 6
+	TIME- 10am – 6 pm
+	Thus, we request you to store the required amount of water beforehand to 
+	minimise the difficulty. Thank you!
+
+	Karan Kumar/ Karuna Bajaj
+	(signature)
+	Secretary	
+
+
+        	</pre></font>
+        </div></center>
+       
+		<a href="form.html"><marquee style="font-size:27px; background: #b4b4b4; color:blue; border-radius: 10px;" direction="right" >ENQUIRY FORM</marquee></a>
+
+		<nav class="navbar">Welcome to my webpage.</nav>
+	
+		<table width="100%" width="600" style="background: #616161; color: white; text-align: left; font-size: 18px; border-radius: 10px; text-align: justify; padding: 40px 10px; margin: 2px 0px;">
+		<tr>
+		<td>To make your document look professionally produced, Word provides header, footer, cover page,and text box designs that complement each other. For example, you can add a matching cover page, header, and debar. Click Insert and then choose the elements you want from the different galleries.Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme,the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, yourheadings change to match the new theme.</td>
+		</tr>
+		<tr>
+		<td>Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign.</td>
+		</tr>
+		<tr>
+		<td>Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device. Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</td>
+		</tr>
+		</table>
+		<center><div id="enquiry_form">
+			<b><font color="solid cyan" size="7" face="Britannic"><u>ADDMISSION</u></font>
+		<font size="7" face="Britannic"><u>-FORM</u></font></b><br><br>
+		<font size="4" face="Verdana"><marquee direction="left" behavior="scroll" scrollamonut="40" style="background-color:#b4b4b4; border-radius:5px">This is only for Enquary purpose only. Form filling are required for know about you.</marquee></font>
+		<br><br><br><br>
+        <table align="center" width="100%">
+		<form>
+		<tr>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Name : </font></td>
+		<td align="left" width="280" height="40"><input type="text" placeholder="Write your full name here." name="name" required="required"></td>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Date Of Birth : </font></td>
+		<td align="left" width="280" height="40"><input type="date" placeholder="Write your D/O/B here." name="date of birth" required="required"></td>
+		</tr>
+		
+		
+		<tr>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Gender : </font></td>
+		<td align="left" width="280" height="40"><input type="radio" name="gender" value="male">Male
+		<input type="radio" name="gender" value="female">Female
+		<input type="radio" name="gender" value="other">Other</td>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Mobile No. : </font></td>
+		<td align="left" width="280" height="40"><input type="number" name="mobile no" required="required" placeholder="Write your mobile no. here."></td>
+		</tr>
+		
+		<tr>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Address : </font></td>
+		<td align="left" width="280" height="40"><textarea name="address" required="required" placeholder="Write your full address here."></textarea></td>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Course : </font></td>
+		<td align="left" width="280" height="40"><select name="course">
+		<option>---please select---</option>
+		<option value="B.Tech">B.Tech</option>
+		<option value="M.Tech">M.Tech</option>
+		<option value="Polytechnic">Polytechnic</option>
+		<option value="M.B.A.">M.B.A.</option>
+		<option value="B.Pharma">B.Pharma</option>
+		<option value="D.Pharma">D.Pharma</option>
+		<option value="M.Pharma">M.Pharma</option>
+		<option value="B.Ed">B.Ed</option>
+		<option value="B.Sc">B.Sc</option>
+		<option value="M.Sc">M.Sc</option>
+		</select></td>
+		</tr>
+			
+		<tr>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">E-mail : </font></td>
+		<td align="left" width="280" height="40"><input type="email" placeholder="Write your e-mail address " name="name" required="required"></td>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Image : </font></td>
+		<td align="left" width="280" height="40"><input type="file" accept=".jpg" name="image"></td>
+		</tr>
+		
+		<tr>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Aadhar card : </font></td>
+		<td align="left" width="280" height="40"><input type="file" accept=".pdf" name="aadhar card"></td>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Pan card : </font></td>
+		<td align="left" width="280" height="40"><input type="file" accept=".pdf" name="pan card"></td>
+		</tr>
+		
+		<tr>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">10th Marksheet : </font></td>
+		<td align="left" width="280" height="40"><input type="file" accept=".pdf" name="10th marksheet"></td>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">12th marksheet : </font></td>
+		<td align="left" width="280" height="40"><input type="file" accept=".pdf" name="12th marksheet"></td>
+		</tr>
+		
+		<tr>
+		<td align="left" width="230" height="40"><font size="5" face="Arial Rounded MT">Agree : </font></td>
+		<td align="left" width="280" height="40"><input type="radio" name="agree" value="yes" required="required">Yes<input type="radio" name="agree" value="no" required="required">No</td>
+		<td align="left" width="230" height="40"></td>
+		<td align="left" width="280" height="40"></td>
+		</tr>
+		<tr>
+			<td align="left" width="230" height="40"><pre>	</pre></td>
+			<td align="left" width="230" height="40"><pre>	</pre></td>
+			<td align="left" width="230" height="40"><pre>	</pre></td>
+			<td align="left" width="230" height="40"><input type="submit" name="Submit" id="submit"></td>
+		</tr>
+        </form>
+		</table>
+		</div></center>
+		<fieldset>
+			<div id="fee">Fee Detail</div>
+		    <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		   </p>
+		</fieldset>
+	</section>
+		<footer>
+			<div id="contact_us">
+				<h1 id="foot">Contact Us</h1>
+				<address>
+				Email : informaton.technology.in
+				Phone no. : +91 XXXXXXXX23
+				Address : Sitapur Road , Lucknow 
+				</address>
+			</div>		
+			<div id="follow_on">
+				<h1 id="foot">Follow On</h1>
+				<a href="https://www.instagram.com"><img src="insta.png" alt="Instagram" id="logo" /></a>
+				<a href="https://www.youtube.com"><img src="insta.png" alt="Instagram" id="logo" /></a>
+				<a href="https://www.twitter.com"><img src="insta.png" alt="Instagram" id="logo" /></a>
+			</div>
+		</footer>
+	</body>
+</html>
